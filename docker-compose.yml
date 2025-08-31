@@ -14,7 +14,7 @@ services:
 
   web:
     build: .
-    command: /app/entrypoint.sh
+    command: sh /app/entrypoint.sh
     environment:
       DJANGO_ENV: development
       POSTGRES_DB: musicdb
